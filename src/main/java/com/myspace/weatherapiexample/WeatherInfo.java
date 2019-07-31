@@ -27,13 +27,13 @@ public class WeatherInfo implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Timezone")
 	private long timezone;
 	@org.kie.api.definition.type.Label("ID")
-	private int id;
+	private long id;
 	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
 	@org.kie.api.definition.type.Label("Cod")
 	private int cod;
 
-	@org.kie.api.definition.type.Label(value = "Main")
+	@org.kie.api.definition.type.Label("Main")
 	private com.myspace.weatherapiexample.Main main;
 
 	public WeatherInfo() {
@@ -111,14 +111,6 @@ public class WeatherInfo implements java.io.Serializable {
 		this.timezone = timezone;
 	}
 
-	public int getId() {
-		return this.id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	public java.lang.String getName() {
 		return this.name;
 	}
@@ -143,12 +135,20 @@ public class WeatherInfo implements java.io.Serializable {
 		this.main = main;
 	}
 
+	public long getId() {
+		return this.id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public WeatherInfo(com.myspace.weatherapiexample.Coordinates coord,
 			com.myspace.weatherapiexample.weather weather,
 			java.lang.String base, long visibility,
 			com.myspace.weatherapiexample.wind wind,
 			com.myspace.weatherapiexample.Clouds clouds, long dt,
-			com.myspace.weatherapiexample.sys sys, long timezone, int id,
+			com.myspace.weatherapiexample.sys sys, long timezone, long id,
 			java.lang.String name, int cod,
 			com.myspace.weatherapiexample.Main main) {
 		this.coord = coord;
