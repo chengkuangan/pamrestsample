@@ -6,12 +6,24 @@ package com.myspace.weatherapiexample;
 
 public class Clouds implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Clouds() {
-    }
+	@org.kie.api.definition.type.Label(value = "All")
+	private float all;
 
+	public Clouds() {
+	}
 
+	public float getAll() {
+		return this.all;
+	}
 
+	public void setAll(float all) {
+		this.all = all;
+	}
+
+	public Clouds(float all) {
+		this.all = all;
+	}
 
 }
