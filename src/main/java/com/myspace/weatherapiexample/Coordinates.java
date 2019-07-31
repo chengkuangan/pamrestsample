@@ -6,12 +6,35 @@ package com.myspace.weatherapiexample;
 
 public class Coordinates implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Coordinates() {
-    }
+	@org.kie.api.definition.type.Label(value = "long")
+	private float lon;
+	@org.kie.api.definition.type.Label(value = "latitute")
+	private float lat;
 
+	public Coordinates() {
+	}
 
+	public float getLon() {
+		return this.lon;
+	}
 
+	public void setLon(float lon) {
+		this.lon = lon;
+	}
+
+	public float getLat() {
+		return this.lat;
+	}
+
+	public void setLat(float lat) {
+		this.lat = lat;
+	}
+
+	public Coordinates(float lon, float lat) {
+		this.lon = lon;
+		this.lat = lat;
+	}
 
 }
