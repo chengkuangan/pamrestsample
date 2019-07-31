@@ -6,12 +6,69 @@ package com.myspace.weatherapiexample;
 
 public class Main implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Main() {
-    }
+	@org.kie.api.definition.type.Label(value = "Temperature")
+	private float temp;
+	@org.kie.api.definition.type.Label(value = "Pressure")
+	private long pressure;
+	@org.kie.api.definition.type.Label(value = "Humidity")
+	private float humidity;
+	@org.kie.api.definition.type.Label(value = "Min Temperature")
+	private float temp_min;
+	@org.kie.api.definition.type.Label(value = "Max Temperature")
+	private float temp_max;
 
+	public Main() {
+	}
 
+	public float getTemp() {
+		return this.temp;
+	}
 
+	public void setTemp(float temp) {
+		this.temp = temp;
+	}
+
+	public long getPressure() {
+		return this.pressure;
+	}
+
+	public void setPressure(long pressure) {
+		this.pressure = pressure;
+	}
+
+	public float getHumidity() {
+		return this.humidity;
+	}
+
+	public void setHumidity(float humidity) {
+		this.humidity = humidity;
+	}
+
+	public float getTemp_min() {
+		return this.temp_min;
+	}
+
+	public void setTemp_min(float temp_min) {
+		this.temp_min = temp_min;
+	}
+
+	public float getTemp_max() {
+		return this.temp_max;
+	}
+
+	public void setTemp_max(float temp_max) {
+		this.temp_max = temp_max;
+	}
+
+	public Main(float temp, long pressure, float humidity, float temp_min,
+			float temp_max) {
+		this.temp = temp;
+		this.pressure = pressure;
+		this.humidity = humidity;
+		this.temp_min = temp_min;
+		this.temp_max = temp_max;
+	}
 
 }
