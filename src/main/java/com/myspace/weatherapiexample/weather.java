@@ -6,12 +6,58 @@ package com.myspace.weatherapiexample;
 
 public class weather implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public weather() {
-    }
+	@org.kie.api.definition.type.Label(value = "ID")
+	private int id;
+	@org.kie.api.definition.type.Label(value = "Main")
+	private java.lang.String main;
+	@org.kie.api.definition.type.Label(value = "Description")
+	private java.lang.String description;
+	@org.kie.api.definition.type.Label(value = "Icon")
+	private java.lang.String icon;
 
+	public weather() {
+	}
 
+	public int getId() {
+		return this.id;
+	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public java.lang.String getMain() {
+		return this.main;
+	}
+
+	public void setMain(java.lang.String main) {
+		this.main = main;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public java.lang.String getIcon() {
+		return this.icon;
+	}
+
+	public void setIcon(java.lang.String icon) {
+		this.icon = icon;
+	}
+
+	public weather(int id, java.lang.String main, java.lang.String description,
+			java.lang.String icon) {
+		this.id = id;
+		this.main = main;
+		this.description = description;
+		this.icon = icon;
+	}
 
 }
