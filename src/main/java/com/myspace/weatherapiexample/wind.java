@@ -6,12 +6,35 @@ package com.myspace.weatherapiexample;
 
 public class wind implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public wind() {
-    }
+	@org.kie.api.definition.type.Label(value = "Speed")
+	private float speed;
+	@org.kie.api.definition.type.Label(value = "Degree")
+	private float deg;
 
+	public wind() {
+	}
 
+	public float getSpeed() {
+		return this.speed;
+	}
 
+	public void setSpeed(float speed) {
+		this.speed = speed;
+	}
+
+	public float getDeg() {
+		return this.deg;
+	}
+
+	public void setDeg(float deg) {
+		this.deg = deg;
+	}
+
+	public wind(float speed, float deg) {
+		this.speed = speed;
+		this.deg = deg;
+	}
 
 }
