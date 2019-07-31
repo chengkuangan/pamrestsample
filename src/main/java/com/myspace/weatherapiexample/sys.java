@@ -6,12 +6,80 @@ package com.myspace.weatherapiexample;
 
 public class sys implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public sys() {
-    }
+	@org.kie.api.definition.type.Label(value = "Type")
+	private int type;
+	@org.kie.api.definition.type.Label(value = "ID")
+	private int id;
+	@org.kie.api.definition.type.Label(value = "Message")
+	private float message;
+	@org.kie.api.definition.type.Label(value = "Country")
+	private java.lang.String country;
+	@org.kie.api.definition.type.Label(value = "Sunrise")
+	private long sunrise;
+	@org.kie.api.definition.type.Label(value = "Sunset")
+	private long sunset;
 
+	public sys() {
+	}
 
+	public int getType() {
+		return this.type;
+	}
 
+	public void setType(int type) {
+		this.type = type;
+	}
+
+	public int getId() {
+		return this.id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public float getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(float message) {
+		this.message = message;
+	}
+
+	public java.lang.String getCountry() {
+		return this.country;
+	}
+
+	public void setCountry(java.lang.String country) {
+		this.country = country;
+	}
+
+	public long getSunrise() {
+		return this.sunrise;
+	}
+
+	public void setSunrise(long sunrise) {
+		this.sunrise = sunrise;
+	}
+
+	public long getSunset() {
+		return this.sunset;
+	}
+
+	public void setSunset(long sunset) {
+		this.sunset = sunset;
+	}
+
+	public sys(int type, int id, float message, java.lang.String country,
+			long sunrise, long sunset) {
+		this.type = type;
+		this.id = id;
+		this.message = message;
+		this.country = country;
+		this.sunrise = sunrise;
+		this.sunset = sunset;
+	}
 
 }
