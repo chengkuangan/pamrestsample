@@ -6,7 +6,7 @@ function com.myspace.restapidemo.SampleData convertToSampleData (Object data){
         
         com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
         
-        com.myspace.weatherapidemo.WeatherInfo sampleData = mapper.readValue(data.toString(), com.myspace.weatherapidemo.WeatherInfo.class);
+        com.myspace.weatherapiexample.WeatherInfo sampleData = mapper.readValue(data.toString(), com.myspace.weatherapiexample.WeatherInfo.class);
 
         System.out.println(">>>>>> sampleData = sampleData");
         System.out.println(">>>>>> sampleData.ssn" + sampleData.getSsn());
