@@ -10,8 +10,6 @@ public class WeatherInfo implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Label("Coordinates")
 	private com.myspace.weatherapiexample.Coordinates coord;
-	@org.kie.api.definition.type.Label("Weather")
-	private com.myspace.weatherapiexample.weather weather;
 	@org.kie.api.definition.type.Label("Base")
 	private java.lang.String base;
 	@org.kie.api.definition.type.Label("Visibility")
@@ -36,6 +34,9 @@ public class WeatherInfo implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Main")
 	private com.myspace.weatherapiexample.Main main;
 
+	@org.kie.api.definition.type.Label(value = "Weather")
+	private java.util.List<com.myspace.weatherapiexample.weather> weather;
+
 	public WeatherInfo() {
 	}
 
@@ -45,14 +46,6 @@ public class WeatherInfo implements java.io.Serializable {
 
 	public void setCoord(com.myspace.weatherapiexample.Coordinates coord) {
 		this.coord = coord;
-	}
-
-	public com.myspace.weatherapiexample.weather getWeather() {
-		return this.weather;
-	}
-
-	public void setWeather(com.myspace.weatherapiexample.weather weather) {
-		this.weather = weather;
 	}
 
 	public java.lang.String getBase() {
@@ -143,16 +136,24 @@ public class WeatherInfo implements java.io.Serializable {
 		this.id = id;
 	}
 
+	public java.util.List<com.myspace.weatherapiexample.weather> getWeather() {
+		return this.weather;
+	}
+
+	public void setWeather(
+			java.util.List<com.myspace.weatherapiexample.weather> weather) {
+		this.weather = weather;
+	}
+
 	public WeatherInfo(com.myspace.weatherapiexample.Coordinates coord,
-			com.myspace.weatherapiexample.weather weather,
 			java.lang.String base, long visibility,
 			com.myspace.weatherapiexample.wind wind,
 			com.myspace.weatherapiexample.Clouds clouds, long dt,
 			com.myspace.weatherapiexample.sys sys, long timezone, long id,
 			java.lang.String name, int cod,
-			com.myspace.weatherapiexample.Main main) {
+			com.myspace.weatherapiexample.Main main,
+			java.util.List<com.myspace.weatherapiexample.weather> weather) {
 		this.coord = coord;
-		this.weather = weather;
 		this.base = base;
 		this.visibility = visibility;
 		this.wind = wind;
@@ -164,6 +165,7 @@ public class WeatherInfo implements java.io.Serializable {
 		this.name = name;
 		this.cod = cod;
 		this.main = main;
+		this.weather = weather;
 	}
 
 }
