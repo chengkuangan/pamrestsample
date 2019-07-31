@@ -8,10 +8,13 @@ public class wind implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Speed")
+	@org.kie.api.definition.type.Label("Speed")
 	private float speed;
-	@org.kie.api.definition.type.Label(value = "Degree")
+	@org.kie.api.definition.type.Label("Degree")
 	private float deg;
+
+	@org.kie.api.definition.type.Label(value = "Gust")
+	private float gust;
 
 	public wind() {
 	}
@@ -32,9 +35,18 @@ public class wind implements java.io.Serializable {
 		this.deg = deg;
 	}
 
-	public wind(float speed, float deg) {
+	public float getGust() {
+		return this.gust;
+	}
+
+	public void setGust(float gust) {
+		this.gust = gust;
+	}
+
+	public wind(float speed, float deg, float gust) {
 		this.speed = speed;
 		this.deg = deg;
+		this.gust = gust;
 	}
 
 }
