@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_LJ0zkLNWEemVC7jLcKV5HQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_GDt7wLNeEemVC7jLcKV5HQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_cityItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_countryItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_respItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="_weatherItem" structureRef="com.myspace.weatherapiexample.WeatherInfo"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_SkippableInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_PriorityInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_CommentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_DescriptionInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_CreatedByInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_TaskNameInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_GroupIdInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_ContentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_NotStartedReassignInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_NotCompletedReassignInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_NotStartedNotifyInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_NotCompletedNotifyInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_weatherInputXItem" structureRef="com.myspace.weatherapiexample.WeatherInfo"/>
+  <bpmn2:itemDefinition id="__F0B96D3E-5982-4675-8A38-9540CF204CAB_respInputXItem" structureRef="Object"/>
+  <bpmn2:itemDefinition id="__F0B96D3E-5982-4675-8A38-9540CF204CAB_MessageInputXItem" structureRef="String"/>
+  <bpmn2:itemDefinition id="__F0B96D3E-5982-4675-8A38-9540CF204CAB_weatherInputXItem" structureRef="com.myspace.weatherapiexample.WeatherInfo"/>
   <bpmn2:itemDefinition id="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ConnectTimeoutInputXItem" structureRef="String"/>
@@ -30,7 +20,7 @@
     <bpmn2:property id="country" itemSubjectRef="_countryItem" name="country"/>
     <bpmn2:property id="resp" itemSubjectRef="_respItem" name="resp"/>
     <bpmn2:property id="weather" itemSubjectRef="_weatherItem" name="weather"/>
-    <bpmn2:sequenceFlow id="_63BAB02E-E642-47AC-AE37-D5937A997E8B" sourceRef="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5" targetRef="_A6AA3C1E-C197-4CA2-A772-5ABB7D39772B">
+    <bpmn2:sequenceFlow id="_E3F10F31-E85C-4094-A062-9F4D9F64FA98" sourceRef="_F0B96D3E-5982-4675-8A38-9540CF204CAB" targetRef="_A6AA3C1E-C197-4CA2-A772-5ABB7D39772B">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
@@ -40,7 +30,7 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_A81D1959-D6C1-42E1-A945-C36C24734DC6" sourceRef="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" targetRef="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5">
+    <bpmn2:sequenceFlow id="_A81D1959-D6C1-42E1-A945-C36C24734DC6" sourceRef="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" targetRef="_F0B96D3E-5982-4675-8A38-9540CF204CAB">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
@@ -61,7 +51,7 @@
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
     <bpmn2:endEvent id="_A6AA3C1E-C197-4CA2-A772-5ABB7D39772B">
-      <bpmn2:incoming>_63BAB02E-E642-47AC-AE37-D5937A997E8B</bpmn2:incoming>
+      <bpmn2:incoming>_E3F10F31-E85C-4094-A062-9F4D9F64FA98</bpmn2:incoming>
     </bpmn2:endEvent>
     <bpmn2:task id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" drools:taskName="Rest" name="REST">
       <bpmn2:extensionElements>
@@ -80,7 +70,7 @@ kcontext.setVariable("weather", weather0);]]></drools:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_067B2FF4-34D2-4D70-B23B-03DBD0A07ED5</bpmn2:incoming>
       <bpmn2:outgoing>_A81D1959-D6C1-42E1-A945-C36C24734DC6</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_LJ0zkbNWEemVC7jLcKV5HQ">
+      <bpmn2:ioSpecification id="_GDt7wbNeEemVC7jLcKV5HQ">
         <bpmn2:dataInput id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputX" drools:dtype="String" itemSubjectRef="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputXItem" name="Method"/>
         <bpmn2:dataInput id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputX" drools:dtype="String" itemSubjectRef="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputXItem" name="Url"/>
         <bpmn2:dataInput id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ConnectTimeoutInputX" drools:dtype="String" itemSubjectRef="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ConnectTimeoutInputXItem" name="ConnectTimeout"/>
@@ -90,7 +80,7 @@ kcontext.setVariable("weather", weather0);]]></drools:script>
         <bpmn2:dataInput id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UsernameInputX" drools:dtype="String" itemSubjectRef="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UsernameInputXItem" name="Username"/>
         <bpmn2:dataInput id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
         <bpmn2:dataOutput id="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ResultOutputX" drools:dtype="java.lang.Object" itemSubjectRef="__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ResultOutputXItem" name="Result"/>
-        <bpmn2:inputSet id="_LJ0zkrNWEemVC7jLcKV5HQ">
+        <bpmn2:inputSet id="_GDt7wrNeEemVC7jLcKV5HQ">
           <bpmn2:dataInputRefs>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ConnectTimeoutInputX</bpmn2:dataInputRefs>
@@ -100,123 +90,130 @@ kcontext.setVariable("weather", weather0);]]></drools:script>
           <bpmn2:dataInputRefs>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UsernameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_TaskNameInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_LJ0zk7NWEemVC7jLcKV5HQ">
+        <bpmn2:outputSet id="_GDt7w7NeEemVC7jLcKV5HQ">
           <bpmn2:dataOutputRefs>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ResultOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_LJ0zlLNWEemVC7jLcKV5HQ">
+      <bpmn2:dataInputAssociation id="_GDt7xLNeEemVC7jLcKV5HQ">
         <bpmn2:targetRef>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_LJ0zlbNWEemVC7jLcKV5HQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_LJ0zlrNWEemVC7jLcKV5HQ"><![CDATA[GET]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_LJ0zl7NWEemVC7jLcKV5HQ">_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputX</bpmn2:to>
+        <bpmn2:assignment id="_GDt7xbNeEemVC7jLcKV5HQ">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_GDt7xrNeEemVC7jLcKV5HQ"><![CDATA[GET]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_GDt7x7NeEemVC7jLcKV5HQ">_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_MethodInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_LJ0zmLNWEemVC7jLcKV5HQ">
+      <bpmn2:dataInputAssociation id="_GDt7yLNeEemVC7jLcKV5HQ">
         <bpmn2:targetRef>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_LJ0zmbNWEemVC7jLcKV5HQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_LJ0zmrNWEemVC7jLcKV5HQ"><![CDATA[https://api.openweathermap.org/data/2.5/weather?q=#{city}%2C#{country}&appid=214d0f1e86d0370d7bbff1875e703565]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_LJ0zm7NWEemVC7jLcKV5HQ">_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputX</bpmn2:to>
+        <bpmn2:assignment id="_GDt7ybNeEemVC7jLcKV5HQ">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_GDt7yrNeEemVC7jLcKV5HQ"><![CDATA[https://api.openweathermap.org/data/2.5/weather?q=#{city}%2C#{country}&appid=214d0f1e86d0370d7bbff1875e703565]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_GDt7y7NeEemVC7jLcKV5HQ">_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_UrlInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_LJ0znLNWEemVC7jLcKV5HQ">
+      <bpmn2:dataInputAssociation id="_GDt7zLNeEemVC7jLcKV5HQ">
         <bpmn2:targetRef>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_LJ0znbNWEemVC7jLcKV5HQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_LJ0znrNWEemVC7jLcKV5HQ"><![CDATA[Rest]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_LJ0zn7NWEemVC7jLcKV5HQ">_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_GDt7zbNeEemVC7jLcKV5HQ">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_GDt7zrNeEemVC7jLcKV5HQ"><![CDATA[Rest]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_GDt7z7NeEemVC7jLcKV5HQ">_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_LJ0zoLNWEemVC7jLcKV5HQ">
+      <bpmn2:dataOutputAssociation id="_GDt70LNeEemVC7jLcKV5HQ">
         <bpmn2:sourceRef>_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_ResultOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>resp</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
-    <bpmn2:userTask id="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5" name="Display Weather">
+    <bpmn2:task id="_F0B96D3E-5982-4675-8A38-9540CF204CAB" drools:taskName="Log" name="Log">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Display Weather]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Log]]></drools:metaValue>
         </drools:metaData>
+        <drools:onEntry-script scriptFormat="http://www.java.com/java">
+          <drools:script><![CDATA[System.out.println ("---------------- Weather Information -------------- ");
+System.out.println ("Raw data in JSON Format: ");
+System.out.println (resp);
+System.out.println ("");
+System.out.println ("Data in Object: ");
+System.out.println ("Location: " + weather.getName());
+System.out.println ( weather.getWeather().getMain() + ":" +  weather.getWeather().getDescription());
+System.out.println ( "Temperature: " + weather.getMain().getTemp() + ", Pressure: " +  weather.getMain().getPressure() + ", Humidity: " + weather.getMain().getHuminity());
+
+
+]]></drools:script>
+        </drools:onEntry-script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_A81D1959-D6C1-42E1-A945-C36C24734DC6</bpmn2:incoming>
-      <bpmn2:outgoing>_63BAB02E-E642-47AC-AE37-D5937A997E8B</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_LJ0zobNWEemVC7jLcKV5HQ">
-        <bpmn2:dataInput id="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_TaskNameInputXItem" name="TaskName"/>
-        <bpmn2:dataInput id="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_weatherInputX" drools:dtype="com.myspace.weatherapiexample.WeatherInfo" itemSubjectRef="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_weatherInputXItem" name="weather"/>
-        <bpmn2:dataInput id="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_SkippableInputX" drools:dtype="Object" itemSubjectRef="__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_LJ0zorNWEemVC7jLcKV5HQ">
-          <bpmn2:dataInputRefs>_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_TaskNameInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_weatherInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_SkippableInputX</bpmn2:dataInputRefs>
+      <bpmn2:outgoing>_E3F10F31-E85C-4094-A062-9F4D9F64FA98</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_GDt70bNeEemVC7jLcKV5HQ">
+        <bpmn2:dataInput id="_F0B96D3E-5982-4675-8A38-9540CF204CAB_respInputX" drools:dtype="Object" itemSubjectRef="__F0B96D3E-5982-4675-8A38-9540CF204CAB_respInputXItem" name="resp"/>
+        <bpmn2:dataInput id="_F0B96D3E-5982-4675-8A38-9540CF204CAB_MessageInputX" drools:dtype="String" itemSubjectRef="__F0B96D3E-5982-4675-8A38-9540CF204CAB_MessageInputXItem" name="Message"/>
+        <bpmn2:dataInput id="_F0B96D3E-5982-4675-8A38-9540CF204CAB_weatherInputX" drools:dtype="com.myspace.weatherapiexample.WeatherInfo" itemSubjectRef="__F0B96D3E-5982-4675-8A38-9540CF204CAB_weatherInputXItem" name="weather"/>
+        <bpmn2:dataInput id="_F0B96D3E-5982-4675-8A38-9540CF204CAB_TaskNameInputX" drools:dtype="Object" name="TaskName"/>
+        <bpmn2:inputSet id="_GDt70rNeEemVC7jLcKV5HQ">
+          <bpmn2:dataInputRefs>_F0B96D3E-5982-4675-8A38-9540CF204CAB_respInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_F0B96D3E-5982-4675-8A38-9540CF204CAB_MessageInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_F0B96D3E-5982-4675-8A38-9540CF204CAB_weatherInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_F0B96D3E-5982-4675-8A38-9540CF204CAB_TaskNameInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_LJ0zo7NWEemVC7jLcKV5HQ">
-        <bpmn2:targetRef>_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_LJ0zpLNWEemVC7jLcKV5HQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_LJ0zpbNWEemVC7jLcKV5HQ"><![CDATA[DisplayWeatherTask]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_LJ0zprNWEemVC7jLcKV5HQ">_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_TaskNameInputX</bpmn2:to>
-        </bpmn2:assignment>
+      <bpmn2:dataInputAssociation id="_GDt707NeEemVC7jLcKV5HQ">
+        <bpmn2:sourceRef>resp</bpmn2:sourceRef>
+        <bpmn2:targetRef>_F0B96D3E-5982-4675-8A38-9540CF204CAB_respInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_LJ0zp7NWEemVC7jLcKV5HQ">
+      <bpmn2:dataInputAssociation id="_GDt71LNeEemVC7jLcKV5HQ">
         <bpmn2:sourceRef>weather</bpmn2:sourceRef>
-        <bpmn2:targetRef>_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_weatherInputX</bpmn2:targetRef>
+        <bpmn2:targetRef>_F0B96D3E-5982-4675-8A38-9540CF204CAB_weatherInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_LJ0zqLNWEemVC7jLcKV5HQ">
-        <bpmn2:targetRef>_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_LJ0zqbNWEemVC7jLcKV5HQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_LJ0zqrNWEemVC7jLcKV5HQ"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_LJ0zq7NWEemVC7jLcKV5HQ">_F16FCEC4-3D30-4745-9CC2-8868A1E751B5_SkippableInputX</bpmn2:to>
+      <bpmn2:dataInputAssociation id="_GDt71bNeEemVC7jLcKV5HQ">
+        <bpmn2:targetRef>_F0B96D3E-5982-4675-8A38-9540CF204CAB_TaskNameInputX</bpmn2:targetRef>
+        <bpmn2:assignment id="_GDt71rNeEemVC7jLcKV5HQ">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_GDt717NeEemVC7jLcKV5HQ"><![CDATA[Log]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_GDt72LNeEemVC7jLcKV5HQ">_F0B96D3E-5982-4675-8A38-9540CF204CAB_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:potentialOwner id="9f252440-da35-4713-897a-63d43971a24b">
-        <bpmn2:resourceAssignmentExpression id="_LJ0zrLNWEemVC7jLcKV5HQ">
-          <bpmn2:formalExpression id="_LJ0zrbNWEemVC7jLcKV5HQ">rhpamAdmin</bpmn2:formalExpression>
-        </bpmn2:resourceAssignmentExpression>
-      </bpmn2:potentialOwner>
-    </bpmn2:userTask>
+    </bpmn2:task>
     <bpmn2:startEvent id="_81ECE182-761C-433B-BB59-9C30097D1FC9">
       <bpmn2:outgoing>_067B2FF4-34D2-4D70-B23B-03DBD0A07ED5</bpmn2:outgoing>
     </bpmn2:startEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_LJ0zrrNWEemVC7jLcKV5HQ">
-    <bpmndi:BPMNPlane id="_LJ0zr7NWEemVC7jLcKV5HQ" bpmnElement="WeatherAPIExample.WeatherRESTAPI">
+  <bpmndi:BPMNDiagram id="_GDt72bNeEemVC7jLcKV5HQ">
+    <bpmndi:BPMNPlane id="_GDt72rNeEemVC7jLcKV5HQ" bpmnElement="WeatherAPIExample.WeatherRESTAPI">
       <bpmndi:BPMNShape id="shape__81ECE182-761C-433B-BB59-9C30097D1FC9" bpmnElement="_81ECE182-761C-433B-BB59-9C30097D1FC9">
         <dc:Bounds height="56.0" width="56.0" x="100.0" y="100.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="shape__F16FCEC4-3D30-4745-9CC2-8868A1E751B5" bpmnElement="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5">
-        <dc:Bounds height="102.0" width="154.0" x="504.0" y="74.0"/>
+      <bpmndi:BPMNShape id="shape__F0B96D3E-5982-4675-8A38-9540CF204CAB" bpmnElement="_F0B96D3E-5982-4675-8A38-9540CF204CAB">
+        <dc:Bounds height="102.0" width="154.0" x="568.0" y="74.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" bpmnElement="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19">
         <dc:Bounds height="102.0" width="154.0" x="270.0" y="74.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__A6AA3C1E-C197-4CA2-A772-5ABB7D39772B" bpmnElement="_A6AA3C1E-C197-4CA2-A772-5ABB7D39772B">
-        <dc:Bounds height="56.0" width="56.0" x="738.0" y="97.0"/>
+        <dc:Bounds height="56.0" width="56.0" x="882.0" y="95.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__81ECE182-761C-433B-BB59-9C30097D1FC9_to_shape__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" bpmnElement="_067B2FF4-34D2-4D70-B23B-03DBD0A07ED5">
         <di:waypoint xsi:type="dc:Point" x="156.0" y="128.0"/>
         <di:waypoint xsi:type="dc:Point" x="270.0" y="125.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_to_shape__F16FCEC4-3D30-4745-9CC2-8868A1E751B5" bpmnElement="_A81D1959-D6C1-42E1-A945-C36C24734DC6">
-        <di:waypoint xsi:type="dc:Point" x="424.0" y="125.0"/>
-        <di:waypoint xsi:type="dc:Point" x="504.0" y="125.0"/>
+      <bpmndi:BPMNEdge id="edge_shape__FC62591D-AF21-4AF0-A2CD-7ED362F1ED19_to_shape__F0B96D3E-5982-4675-8A38-9540CF204CAB" bpmnElement="_A81D1959-D6C1-42E1-A945-C36C24734DC6">
+        <di:waypoint xsi:type="dc:Point" x="347.0" y="176.0"/>
+        <di:waypoint xsi:type="dc:Point" x="645.0" y="74.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__F16FCEC4-3D30-4745-9CC2-8868A1E751B5_to_shape__A6AA3C1E-C197-4CA2-A772-5ABB7D39772B" bpmnElement="_63BAB02E-E642-47AC-AE37-D5937A997E8B">
-        <di:waypoint xsi:type="dc:Point" x="658.0" y="125.0"/>
-        <di:waypoint xsi:type="dc:Point" x="738.0" y="125.0"/>
+      <bpmndi:BPMNEdge id="edge_shape__F0B96D3E-5982-4675-8A38-9540CF204CAB_to_shape__A6AA3C1E-C197-4CA2-A772-5ABB7D39772B" bpmnElement="_E3F10F31-E85C-4094-A062-9F4D9F64FA98">
+        <di:waypoint xsi:type="dc:Point" x="645.0" y="74.0"/>
+        <di:waypoint xsi:type="dc:Point" x="910.0" y="151.0"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_LJ0zsLNWEemVC7jLcKV5HQ" type="BPSimData">
+  <bpmn2:relationship id="_GDt727NeEemVC7jLcKV5HQ" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_81ECE182-761C-433B-BB59-9C30097D1FC9" id="_LJ0zsbNWEemVC7jLcKV5HQ">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_81ECE182-761C-433B-BB59-9C30097D1FC9" id="_GDt73LNeEemVC7jLcKV5HQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F16FCEC4-3D30-4745-9CC2-8868A1E751B5" id="_LJ0zsrNWEemVC7jLcKV5HQ">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F0B96D3E-5982-4675-8A38-9540CF204CAB" id="_GDt73bNeEemVC7jLcKV5HQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -236,7 +233,7 @@ kcontext.setVariable("weather", weather0);]]></drools:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" id="_LJ0zs7NWEemVC7jLcKV5HQ">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FC62591D-AF21-4AF0-A2CD-7ED362F1ED19" id="_GDt73rNeEemVC7jLcKV5HQ">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -259,7 +256,7 @@ kcontext.setVariable("weather", weather0);]]></drools:script>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_LJ0zkLNWEemVC7jLcKV5HQ</bpmn2:source>
-    <bpmn2:target>_LJ0zkLNWEemVC7jLcKV5HQ</bpmn2:target>
+    <bpmn2:source>_GDt7wLNeEemVC7jLcKV5HQ</bpmn2:source>
+    <bpmn2:target>_GDt7wLNeEemVC7jLcKV5HQ</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
