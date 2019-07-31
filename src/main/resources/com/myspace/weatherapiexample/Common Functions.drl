@@ -1,6 +1,6 @@
 package com.myspace.weatherapiexample;
 
-function com.myspace.restapidemo.SampleData convertToSampleData (Object data){
+function com.myspace.weatherapiexample.WeatherInfo convertJSONToObject (String data){
         
         System.out.println(">>>>>> data = data");
         
@@ -9,7 +9,7 @@ function com.myspace.restapidemo.SampleData convertToSampleData (Object data){
         com.myspace.weatherapiexample.WeatherInfo sampleData = mapper.readValue(data.toString(), com.myspace.weatherapiexample.WeatherInfo.class);
 
         System.out.println(">>>>>> sampleData = sampleData");
-        System.out.println(">>>>>> sampleData.ssn" + sampleData.getSsn());
+        System.out.println(">>>>>> sampleData.ssn" + sampleData.getName());
 		
 		return sampleData;
 		
