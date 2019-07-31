@@ -8,7 +8,7 @@ function com.myspace.weatherapiexample.WeatherInfo convertJSONToObject (Object d
         
         com.myspace.weatherapiexample.WeatherInfo sampleData = mapper.readValue(data.toString(), com.myspace.weatherapiexample.WeatherInfo.class);
 
-        System.out.println(">>>>>> sampleData = sampleData");
+       System.out.println(">>>>>> sampleData = sampleData");
         System.out.println(">>>>>> sampleData.ssn" + sampleData.getName());
 		
 		return sampleData;
