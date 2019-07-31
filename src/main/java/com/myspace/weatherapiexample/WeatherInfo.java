@@ -8,30 +8,33 @@ public class WeatherInfo implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Coordinates")
+	@org.kie.api.definition.type.Label("Coordinates")
 	private com.myspace.weatherapiexample.Coordinates coord;
-	@org.kie.api.definition.type.Label(value = "Weather")
+	@org.kie.api.definition.type.Label("Weather")
 	private com.myspace.weatherapiexample.weather weather;
-	@org.kie.api.definition.type.Label(value = "Base")
+	@org.kie.api.definition.type.Label("Base")
 	private java.lang.String base;
-	@org.kie.api.definition.type.Label(value = "Visibility")
+	@org.kie.api.definition.type.Label("Visibility")
 	private long visibility;
-	@org.kie.api.definition.type.Label(value = "Wind")
+	@org.kie.api.definition.type.Label("Wind")
 	private com.myspace.weatherapiexample.wind wind;
-	@org.kie.api.definition.type.Label(value = "Clouds")
+	@org.kie.api.definition.type.Label("Clouds")
 	private com.myspace.weatherapiexample.Clouds clouds;
-	@org.kie.api.definition.type.Label(value = "DT")
+	@org.kie.api.definition.type.Label("DT")
 	private long dt;
-	@org.kie.api.definition.type.Label(value = "Sys")
+	@org.kie.api.definition.type.Label("Sys")
 	private com.myspace.weatherapiexample.sys sys;
-	@org.kie.api.definition.type.Label(value = "Timezone")
+	@org.kie.api.definition.type.Label("Timezone")
 	private long timezone;
-	@org.kie.api.definition.type.Label(value = "ID")
+	@org.kie.api.definition.type.Label("ID")
 	private int id;
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Cod")
+	@org.kie.api.definition.type.Label("Cod")
 	private int cod;
+
+	@org.kie.api.definition.type.Label(value = "Main")
+	private com.myspace.weatherapiexample.Main main;
 
 	public WeatherInfo() {
 	}
@@ -132,13 +135,22 @@ public class WeatherInfo implements java.io.Serializable {
 		this.cod = cod;
 	}
 
+	public com.myspace.weatherapiexample.Main getMain() {
+		return this.main;
+	}
+
+	public void setMain(com.myspace.weatherapiexample.Main main) {
+		this.main = main;
+	}
+
 	public WeatherInfo(com.myspace.weatherapiexample.Coordinates coord,
 			com.myspace.weatherapiexample.weather weather,
 			java.lang.String base, long visibility,
 			com.myspace.weatherapiexample.wind wind,
 			com.myspace.weatherapiexample.Clouds clouds, long dt,
 			com.myspace.weatherapiexample.sys sys, long timezone, int id,
-			java.lang.String name, int cod) {
+			java.lang.String name, int cod,
+			com.myspace.weatherapiexample.Main main) {
 		this.coord = coord;
 		this.weather = weather;
 		this.base = base;
@@ -151,6 +163,7 @@ public class WeatherInfo implements java.io.Serializable {
 		this.id = id;
 		this.name = name;
 		this.cod = cod;
+		this.main = main;
 	}
 
 }
